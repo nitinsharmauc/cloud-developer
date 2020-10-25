@@ -46,7 +46,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
                         })})
     .catch(
       function (err) {
-        return res.status(400)
+        return res.status(422)
                   .send('image url not valid or image at the url is not a valid image!');
       }
     )
